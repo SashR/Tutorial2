@@ -32,3 +32,13 @@ void fraction::sub(fraction x, fraction y)
 	num = (x.num*y.den) - (x.num*y.den);
 	den = (x.den*y.den);
 }
+void fraction::multi(fraction x, fraction y)
+{
+	num = (x.num*y.num);
+	den = (x.den *y.den);
+}
+void fraction::div(fraction x, fraction y)
+{
+	num = (x.num*y.den);
+	den = (x.den *y.num);
+}
