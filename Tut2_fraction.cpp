@@ -27,3 +27,8 @@ void fraction::add(fraction x, fraction y)
 	num = (x.num*y.den) + (x.num*y.den);
 	den = x.den*y.den;
 }
+void fraction::sub(fraction x, fraction y)
+{
+	num = (x.num*y.den) - (x.num*y.den);
+	den = (x.den*y.den);
+}
