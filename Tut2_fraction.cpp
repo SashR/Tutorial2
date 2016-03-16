@@ -42,3 +42,14 @@ void fraction::div(fraction x, fraction y)
 	num = (x.num*y.den);
 	den = (x.den *y.num);
 }
+int hcf(int j, int k)
+{
+	int l = j % k;
+	while (l != 0)
+	{
+		j = k;
+		k = l;
+		l = j % k;
+	}
+	return k;
+}
