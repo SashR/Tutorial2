@@ -15,3 +15,10 @@ public:
 	void Div(fraction, fraction);
 	void setvalues();
 };
+void fraction::setvalues()
+{
+	cout << "Please enter numerator" << endl;
+	cin >> num;
+	cout << "Please enter denominator" << endl;
+	cin >> den;
+}
