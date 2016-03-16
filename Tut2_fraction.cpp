@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class fraction
@@ -14,7 +14,11 @@ public:
 	void multi(fraction, fraction);
 	void div(fraction, fraction);
 	void setvalues();
+	void print(fraction);
 };
+
+int hcf(int, int);
+
 void fraction::setvalues()
 {
 	cout << "Please enter numerator" << endl;
@@ -52,4 +56,39 @@ int hcf(int j, int k)
 		l = j % k;
 	}
 	return k;
+}
+
+void print(fraction x)
+{
+		cout << x.setvalues() << endl;
+}
+int main()
+{   
+	fraction f1;
+	fraction f2;
+	fraction f3;
+	fraction f4;
+	fraction f5;
+	fraction f6;
+
+	cout << "fraction 1" << endl;
+	f1.setvalues();
+	cout << "fraction 2" << endl;
+	f2.setvalues();
+	f3.add(f1, f2);
+	f4.sub(f1, f2);
+	f5.multi(f1, f2);
+	f6.div(f1, f2);
+
+	cout << "addition of fractions:";
+	print(f3);
+	cout << "subtraction of fractions:";
+	print(f4);
+	cout << "multiplication of fractions:";
+	print(f5);
+	cout << "division of fractions:";
+	print(f6);
+
+	return 0;
+
 }
