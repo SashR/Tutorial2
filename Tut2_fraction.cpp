@@ -22,3 +22,8 @@ void fraction::setvalues()
 	cout << "Please enter denominator" << endl;
 	cin >> den;
 }
+void fraction::add(fraction x, fraction y)
+{
+	num = (x.num*y.den) + (x.num*y.den);
+	den = x.den*y.den;
+}
