@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-class fraction
+class fraction // creates fraction class
 
 {
 private:
 
-public:
+public:// calling functions
 	int num;
 	int den;
 	void add(fraction, fraction);
@@ -19,34 +19,34 @@ public:
 
 int hcf(int, int);
 
-void fraction::setvalues()
+void fraction::setvalues() // populates 'fraction'
 {
 	cout << "Please enter numerator" << endl;
 	cin >> num;
 	cout << "Please enter denominator" << endl;
 	cin >> den;
 }
-void fraction::add(fraction x, fraction y)
+void fraction::add(fraction x, fraction y) // computes addition
 {
 	num = (x.num*y.den) + (x.num*y.den);
 	den = x.den*y.den;
 }
-void fraction::sub(fraction x, fraction y)
+void fraction::sub(fraction x, fraction y) // computes subtraction
 {
 	num = (x.num*y.den) - (x.num*y.den);
 	den = (x.den*y.den);
 }
-void fraction::multi(fraction x, fraction y)
+void fraction::multi(fraction x, fraction y) // computes multiplacation
 {
 	num = (x.num*y.num);
 	den = (x.den *y.den);
 }
-void fraction::div(fraction x, fraction y)
+void fraction::div(fraction x, fraction y) // computes division
 {
 	num = (x.num*y.den);
 	den = (x.den *y.num);
 }
-int hcf(int j, int k)
+int hcf(int j, int k) // computes highest common factor
 {
 	int l = j % k;
 	while (l != 0)
@@ -58,11 +58,11 @@ int hcf(int j, int k)
 	return k;
 }
 
-void print(fraction x)
+void print(fraction x) // print values
 {
 		cout << x.setvalues() << endl;
 }
-int main()
+int main() // main program
 {   
 	fraction f1;
 	fraction f2;
