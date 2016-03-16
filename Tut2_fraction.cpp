@@ -9,10 +9,10 @@ private:
 public:
 	int num;
 	int den;
-	void Add(fraction, fraction);
-	void Sub(fraction, fraction);
-	void Multi(fraction, fraction);
-	void Div(fraction, fraction);
+	void add(fraction, fraction);
+	void sub(fraction, fraction);
+	void multi(fraction, fraction);
+	void div(fraction, fraction);
 	void setvalues();
 };
 void fraction::setvalues()
